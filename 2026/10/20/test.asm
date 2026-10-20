@@ -23,6 +23,12 @@ s3  db 20 dup (?)
     mov ah, 9
     lea dx, ms1
     int 21h
+
+nhap1:    
+    mov ah, 1
+    int 21h
+    cmp al, 13
+    je stop1
     
     mov ah, 9
     lea dx, ms4
